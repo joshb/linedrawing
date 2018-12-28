@@ -1,10 +1,10 @@
 CXX=g++
-CXXFLAGS=`sdl-config --cflags`
-LDFLAGS=`sdl-config --libs`
+CXXFLAGS=`pkg-config sdl2 --cflags`
+LDFLAGS=`pkg-config sdl2 --libs`
 OBJS=main.o Color.o Rasterizer.o
 
 linedrawing:	$(OBJS)
-	$(CXX) $(LDFLAGS) $(OBJS) -o linedrawing
+	$(CXX) $(OBJS) $(LDFLAGS) -o linedrawing
 
 clean:
 	rm -f linedrawing
