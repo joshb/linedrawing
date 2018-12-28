@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009 Josh A. Beam
+ * Copyright (C) 2009-2018 Josh A. Beam
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
